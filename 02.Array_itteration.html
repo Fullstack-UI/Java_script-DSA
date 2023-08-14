@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let anu = [1, 5, 59, 85, 35, 91];
+      // console.log(anu[2])
+
+      // for (let i = 0; i <= anu.length; i++) {
+      //     const element = anu[i];
+      //     console.log(element)
+      // }
+
+      function arrayiterate() {
+        var start = document.getElementById("vbnm").value;
+        // console.log(anu.length>start)
+        console.log(typeof parseInt(start));
+
+        if (anu.length > start && typeof parseInt(start) === "number") {
+          console.log(anu[start]);
+        } else {
+          alert("enter valid input");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="vbnm" placeholder="input" />
+    <button onclick="arrayiterate()">Submit</button>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let anu = [1, 2, 3, 4];
+      let newelement = 9;
+      let position = 2;
+      for (i = anu.length - 1; i > 0; i--) {
+        if (i >= position) {
+          anu[i + 1] = anu[i];
+          if (i == position) {
+            anu[i] = newelement;
+          }
+        }
+      }
+      console.log(anu);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      function travers() {
+        let anu = [1, 2, 3, 4];
+        let newelement = document.getElementById("eertyu").value;
+        let position = document.getElementById("okujuu").value;
+        for (i = anu.length - 1; i > 0; i--) {
+          if (i >= position) {
+            anu[i + 1] = anu[i];
+            if (i == position) {
+              anu[i] = parseInt(newelement);
+            }
+          }
+        }
+        console.log(anu)
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="New Element" id="eertyu"/>
+    <input type="text" placeholder="position" id="okujuu"/>
+    <button onclick="travers()">Submit</button>
+  </body>
+</html>
