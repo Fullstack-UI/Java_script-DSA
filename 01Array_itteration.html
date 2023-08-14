@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <script>
+        for (i = 1; i <= 10; i++) {
+          console.log(`3 x ${i} = ${i*3}`);
+        }
+    //   for (i = 10; i >= 0; i--) {
+    //     console.log(i);
+    //   }
+
+      function increment() {
+        var start = document.getElementById("start").value;
+        // console.log(start)
+        var end = document.getElementById("end").value;
+        // console.log(end)
+        // for (i = start; i <= end; i++) {
+        //   console.log(i);
+        // }
+        // for (i = start; i <= end; i+=2) {
+        //   console.log(i);
+        // }
+      }
+      
+    </script>
+  </head>
+  <body>
+    <input type="text" id="start" placeholder="starting" />
+    <input type="text" id="end" placeholder="ending" />
+    <button onclick="increment()">Submit</button>
+  </body>
 </html>
