@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+    //   let anu = [10, 20, 50, 4, 76, 96, 78];
+    //   let position = 3;
+    //   console.log(anu);
+    //   for (let i = position - 1; i <= anu.length - 1; i++) {
+    //     const element = anu[i];
+    //     console.log(element);
+    //     anu[i] = anu[i + 1];
+    //   }
+    //   anu.length = anu.length - 1;
+    //   console.log(anu);
+
+      function deletion() {
+        let anu = [10, 20, 50, 4, 76, 96, 78];
+        let position = document.getElementById('delete').value;
+        console.log(anu)
+        position = parseInt(position)
+        for (let i = position - 1; i <= anu.length - 1; i++) {
+        //   const element = anu[i];
+        //   console.log(element);
+          anu[i] = anu[i + 1];
+        }
+        anu.length = anu.length - 1;
+        console.log(anu);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="enter position" id="delete" />
+    <button onclick="deletion()">Delete the element</button>
+  </body>
+</html>
